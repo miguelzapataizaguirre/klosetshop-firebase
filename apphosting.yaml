@@ -4,4 +4,4 @@ deployment:
   build:
     builder: Firebase
     firebase:
-      buildCommand: "true"  # Comando dummy para evitar buildpacks
+      buildCommand: "echo 'Skipping build'"
