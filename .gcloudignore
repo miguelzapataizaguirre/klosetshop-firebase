@@ -1,8 +1,8 @@
-# Ignora TODO excepto archivos esenciales
+# Ignora TODO excepto estos archivos esenciales
 *
 !index.html
 !style.css
 !app.js
-!.gcloudignore
-!cloudbuild.yaml
 !apphosting.yaml
+!firebase.json
+!.gcloudignore
