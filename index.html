@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>KlosetShop</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-storage.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>👗 KlosetShop – Inventario de Productos</h1>
+
+    <!-- Agregar Artículo -->
+    <div class="card">
+      <h2>Agregar Nuevo Producto</h2>
+      <input type="file" id="camera" accept="image/*" capture="environment">
+      <input type="text" id="itemName" placeholder="Nombre del producto">
+      <input type="number" id="itemPrice" placeholder="Precio ($)">
+      <input type="number" id="itemQuantity" placeholder="Cantidad">
+      <button onclick="addItem()">Guardar Producto</button>
+    </div>
+
+    <!-- Inventario -->
+    <div class="card">
+      <h2>Inventario</h2>
+      <div id="inventoryList"></div>
+    </div>
+
+    <!-- Reporte -->
+    <div class="card">
+      <h2>Resumen</h2>
+      <button onclick="generateReport()">Generar Reporte</button>
+      <div id="report"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

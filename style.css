@@ -1,0 +1,44 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: #f0f2f5;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+input, button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #673ab7;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#inventoryList div {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+img {
+  max-height: 60px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
