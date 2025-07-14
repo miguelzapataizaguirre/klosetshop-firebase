@@ -1,6 +1,6 @@
 steps:
 - name: 'gcr.io/cloud-builders/npm'
-  args: ['install', '-g', 'firebase-tools']
+  args: ['install', '-g', 'firebase-tools@latest']
   id: 'install-firebase'
 
 - name: 'gcr.io/firebase/hosting'
