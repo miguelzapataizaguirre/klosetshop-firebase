@@ -1,0 +1,7 @@
+service: default
+runtime: nodejs20
+deployment:
+  build:
+    builder: Firebase
+    firebase:
+      buildCommand: "true"  # Comando dummy para evitar buildpacks
