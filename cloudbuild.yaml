@@ -1,0 +1,11 @@
+rsteps:
+# Paso 1: Instalar Firebase CLI
+- name: 'gcr.io/cloud-builders/npm'
+  args: ['install', '-g', 'firebase-tools']
+  id: 'Instalar Firebase CLI'
+
+# Paso 2: Desplegar hosting
+- name: 'gcr.io/firebase/hosting'
+  args: ['deploy', '--project=$PROJECT_ID', '--only=hosting']
+  timeout: 180s
+  id: 'Desplegar Hosting'
