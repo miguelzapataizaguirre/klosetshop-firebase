@@ -1,0 +1,7 @@
+# Ignora TODO excepto los archivos esenciales
+*
+!index.html
+!style.css
+!app.js
+!cloudbuild.yaml
+!.gcloudignore
